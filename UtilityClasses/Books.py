@@ -110,6 +110,4 @@ def returnBook(id:int):
             print("student",student)
             myStudent.write(student)
     myStudent.close()
-    myBook.close()           
-returnBook(104)
-    
+    myBook.close()
