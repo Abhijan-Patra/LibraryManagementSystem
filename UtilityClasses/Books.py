@@ -73,5 +73,10 @@ def issueBook(id:int):
         book=removeBook(id)
         myStudent.write(f"{studentName}|{studentRegNo}|{book}")
         print(f"{book.strip("\n")}  2 has been issued succesfully by {studentName}")
-    
-    
+    myStudent.close()
+def showStudents():
+    myStudent=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Student.txt","r")
+    allStudents=myStudent.readlines()
+    for student in allStudents:
+        print(student.strip("\n"))
+    myStudent.close()
