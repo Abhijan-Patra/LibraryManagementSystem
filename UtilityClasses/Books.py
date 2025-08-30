@@ -80,3 +80,36 @@ def showStudents():
     for student in allStudents:
         print(student.strip("\n"))
     myStudent.close()
+def returnBook(id:int):
+    studentRegNo=input("Enter the Student Reg No.: ")
+    myStudent=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Student.txt",'r')
+    allStudents=myStudent.readlines()
+    myStudent.close()
+    myStudent=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Student.txt",'w')
+    bookReturned=False
+    myBook=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Books.txt",'a+')
+    print(allStudents)
+    book=""
+    for student in allStudents:
+        if student=="\n":continue
+        if studentRegNo==student.strip("\n").split("|")[1]:
+            print(student.strip("\n").split("|")[1])
+            if id == int(student.strip("\n").split("|")[2]):
+                bookReturned=True
+                for i in student.split("|")[2:]:
+                    book=book+i+"|"
+                myBook.write(book.strip("|"))
+                
+
+                
+            else:
+                bookReturned=False
+                myStudent.write(student)
+        else:
+            bookReturned=False
+            print("student",student)
+            myStudent.write(student)
+    myStudent.close()
+    myBook.close()           
+returnBook(104)
+    
