@@ -112,3 +112,14 @@ def returnBook(id:int):
     myStudent.close()
     myBook.close()
 
+def searchBook(title:str)->str:
+    myBook=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Books.txt",'r')
+    allBooks=myBook.readlines()
+    myBook.close()
+    found=False
+    for book in allBooks:
+        if book.strip("\n").split("|")[1].lower()==title.lower():
+            found=True
+            return book.strip("\n").split("|")[0]
+    if found==False:
+        return "Not Found"

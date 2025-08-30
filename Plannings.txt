@@ -1,10 +1,11 @@
 1.Login System
-    a.Admin Login
+    a.Admin Login(Done)
         can add/remove books(Done)
-    b.Student Login
+    b.Student Login(Done)
         can issue/borrow/purchase books(Done)
 2.Display books(Done)
 3.Search Functionality
 4.Store the borrower name(Done)
 5.Implement Fine System
 6.Track Borrowers(done)
+7.Save all the checkout timings.
