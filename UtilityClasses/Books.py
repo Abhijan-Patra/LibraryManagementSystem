@@ -33,4 +33,9 @@ def removeBook(idd:int):
     myBook.close()
 
 
-removeBook(102)
+def displayBook():
+    myBook=open("/Users/abhijanpatra/Documents/Python/Library Management System/LibraryManagementSystem/Books.txt",'r')
+    allBooks=myBook.readlines()
+    for book in allBooks:
+        print(book,end="")
+displayBook()
