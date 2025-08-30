@@ -1,2 +1,3 @@
 class Books:
-    pass
+    def hell(self):
+        print("FF")
