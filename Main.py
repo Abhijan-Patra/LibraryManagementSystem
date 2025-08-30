@@ -1,3 +1,1 @@
-class Books:
-    def hell(self):
-        print("FF")
+permission=False
