@@ -3,7 +3,7 @@
         can add/remove books(Done)
     b.Student Login
         can issue/borrow/purchase books
-2.Display books
+2.Display books(Done)
 3.Search Functionality
 4.Store the borrower name
 5.Implement Fine System
