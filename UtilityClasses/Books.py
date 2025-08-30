@@ -111,4 +111,7 @@ def returnBook(id:int):
             myStudent.write(student)
     myStudent.close()
     myBook.close()
-displayBook()
+
+def fineSystem(noOfDays:int)->int:
+    return (noOfDays-10)*100
+print(fineSystem(15))
