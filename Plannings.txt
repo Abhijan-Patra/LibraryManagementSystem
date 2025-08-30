@@ -1,0 +1,10 @@
+1.Login System
+    a.Admin Login
+        can add/remove books
+    b.Student Login
+        can issue/borrow/purchase books
+2.Display books
+3.Search Functionality
+4.Store the borrower name
+5.Implement Fine System
+6.Track Borrowers
