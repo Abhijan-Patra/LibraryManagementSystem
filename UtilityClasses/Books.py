@@ -111,3 +111,4 @@ def returnBook(id:int):
             myStudent.write(student)
     myStudent.close()
     myBook.close()
+displayBook()
