@@ -1,1 +1,2 @@
-101|Abhijan Patra|Computer Science
+1|Abhijan|cse
+11|anshu|cse
