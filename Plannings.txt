@@ -4,8 +4,6 @@
     b.Student Login(Done)
         can issue/borrow/purchase books(Done)
 2.Display books(Done)
-3.Search Functionality
+3.Search Functionality(Done)
 4.Store the borrower name(Done)
-5.Implement Fine System
 6.Track Borrowers(done)
-7.Save all the checkout timings.
