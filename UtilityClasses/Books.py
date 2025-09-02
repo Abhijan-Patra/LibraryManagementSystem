@@ -104,9 +104,6 @@ class Books:
                     for i in student.split("|")[2:]:
                         book=book+i+"|"
                     myBook.write(book.strip("|"))
-
-
-
                 else:
                     bookReturned=False
                     myStudent.write(student)
