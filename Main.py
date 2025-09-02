@@ -12,7 +12,7 @@ match choice:
         login.SignUP()
     case 2:
         login.SignIN()
-print(login.permission)
+
 if login.permission:
     print("1-Admin")
     print("2-Student")
